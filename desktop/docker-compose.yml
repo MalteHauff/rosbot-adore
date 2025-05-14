@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  nav2_dev:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      args:
+        USER_ID: "${UID}"
+        GROUP_ID: "${GID}"
+    container_name: nav2_iron_nav2
+    network_mode: host            # ROS2 DDS discovery on host network
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+      - ROS_DOMAIN_ID=0
+      - USER_ID=${UID}
+      - GROUP_ID=${GID}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ./nav2_ws:/home/ros/ws         # your colcon workspace
+      - ./src:/src:rw      # mount host dictionaries
+    stdin_open: true
+    tty: true
+    privileged: true
+    command: ["bash"]

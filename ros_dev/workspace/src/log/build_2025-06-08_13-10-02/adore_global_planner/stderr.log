@@ -1,0 +1,139 @@
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:6:6:[m[K [01;31m[Kerror: [m[K‘[01m[KPlanner[m[K’ has not been declared
+    6 | void [01;31m[KPlanner[m[K::configure(
+      |      [01;31m[K^~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:7:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_lifecycle[m[K’ does not name a type
+    7 |   const [01;31m[Krclcpp_lifecycle[m[K::LifecycleNode::SharedPtr & parent,
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:7:40:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+    7 |   const rclcpp_lifecycle::LifecycleNode[01;31m[K::[m[KSharedPtr & parent,
+      |                                        [01;31m[K^~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:7:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+    7 |   const rclcpp_lifecycle::LifecycleNode[01;31m[K:[m[K[32m[K:[m[KSharedPtr & parent,
+      |                                        [01;31m[K^[m[K[32m[K~[m[K
+      |                                        [32m[K)[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:6:24:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+    6 | void Planner::configure[01;36m[K([m[K
+      |                        [01;36m[K^[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:7:40:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+    7 |   const rclcpp_lifecycle::LifecycleNode[01;31m[K::[m[KSharedPtr & parent,
+      |                                        [01;31m[K^~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:43:6:[m[K [01;31m[Kerror: [m[K‘[01m[KPlanner[m[K’ has not been declared
+   43 | void [01;31m[KPlanner[m[K::cleanup()
+      |      [01;31m[K^~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:[m[K In function ‘[01m[Kvoid adore_global_planner::cleanup()[m[K’:
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:46:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kexternal_path_sub_[m[K’ was not declared in this scope
+   46 |   [01;31m[Kexternal_path_sub_[m[K.reset();
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:47:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kinternal_path_pub_[m[K’ was not declared in this scope
+   47 |   [01;31m[Kinternal_path_pub_[m[K.reset();
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:50:10:[m[K [01;31m[Kerror: [m[K‘[01m[Klock_guard[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   50 |     std::[01;31m[Klock_guard[m[K<std::mutex> lock(path_mutex_);
+      |          [01;31m[K^~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:2:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::lock_guard[m[K’ is defined in header ‘[01m[K<mutex>[m[K’; did you forget to ‘[01m[K#include <mutex>[m[K’?
+    1 | #include "adore_global_planner/adore_global_planner.hpp"
+  +++ |+[32m[K#include <mutex>[m[K
+    2 | 
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:50:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kmutex[m[K’ is not a member of ‘[01m[Kstd[m[K’
+   50 |     std::lock_guard<std::[01;31m[Kmutex[m[K> lock(path_mutex_);
+      |                          [01;31m[K^~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:50:26:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::mutex[m[K’ is defined in header ‘[01m[K<mutex>[m[K’; did you forget to ‘[01m[K#include <mutex>[m[K’?
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:50:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_mutex_[m[K’ was not declared in this scope
+   50 |     std::lock_guard<std::mutex> lock([01;31m[Kpath_mutex_[m[K);
+      |                                      [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:50:33:[m[K [01;31m[Kerror: [m[K‘[01m[Klock[m[K’ was not declared in this scope
+   50 |     std::lock_guard<std::mutex> [01;31m[Klock[m[K(path_mutex_);
+      |                                 [01;31m[K^~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:51:5:[m[K [01;31m[Kerror: [m[K‘[01m[Khave_path_[m[K’ was not declared in this scope
+   51 |     [01;31m[Khave_path_[m[K = false;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:52:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_external_path_[m[K’ was not declared in this scope
+   52 |     [01;31m[Klast_external_path_[m[K = nav_msgs::msg::Path();  // clear any stored path
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:52:27:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ has not been declared
+   52 |     last_external_path_ = [01;31m[Knav_msgs[m[K::msg::Path();  // clear any stored path
+      |                           [01;31m[K^~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:55:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kparent_node_[m[K’ was not declared in this scope
+   55 |   if (auto node = [01;31m[Kparent_node_[m[K.lock()) {
+      |                   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:56:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+   56 |     [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "[Planner] cleaned up");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:[m[K At global scope:
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:60:6:[m[K [01;31m[Kerror: [m[K‘[01m[KPlanner[m[K’ has not been declared
+   60 | void [01;31m[KPlanner[m[K::activate()
+      |      [01;31m[K^~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:[m[K In function ‘[01m[Kvoid adore_global_planner::activate()[m[K’:
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:63:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kparent_node_[m[K’ was not declared in this scope
+   63 |   if (auto node = [01;31m[Kparent_node_[m[K.lock()) {
+      |                   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:64:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+   64 |     [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "[Planner] activated");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:[m[K At global scope:
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:68:6:[m[K [01;31m[Kerror: [m[K‘[01m[KPlanner[m[K’ has not been declared
+   68 | void [01;31m[KPlanner[m[K::deactivate()
+      |      [01;31m[K^~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:[m[K In function ‘[01m[Kvoid adore_global_planner::deactivate()[m[K’:
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:71:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kparent_node_[m[K’ was not declared in this scope
+   71 |   if (auto node = [01;31m[Kparent_node_[m[K.lock()) {
+      |                   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:72:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+   72 |     [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "[Planner] deactivated");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:[m[K At global scope:
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:78:1:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+   78 | [01;31m[Knav_msgs[m[K::msg::Path Planner::createPlan(
+      | [01;31m[K^~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:113:6:[m[K [01;31m[Kerror: [m[K‘[01m[KPlanner[m[K’ has not been declared
+  113 | void [01;31m[KPlanner[m[K::externalPathCallback(const nav_msgs::msg::Path::SharedPtr msg)
+      |      [01;31m[K^~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:113:42:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+  113 | void Planner::externalPathCallback(const [01;31m[Knav_msgs[m[K::msg::Path::SharedPtr msg)
+      |                                          [01;31m[K^~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:113:55:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  113 | void Planner::externalPathCallback(const nav_msgs::msg[01;31m[K::[m[KPath::SharedPtr msg)
+      |                                                       [01;31m[K^~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:113:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  113 | void Planner::externalPathCallback[34m[K([m[Kconst nav_msgs::msg[01;31m[K:[m[K[32m[K:[m[KPath::SharedPtr msg)
+      |                                   [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+      |                                                       [32m[K)[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:113:55:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+  113 | void Planner::externalPathCallback(const nav_msgs::msg[01;31m[K::[m[KPath::SharedPtr msg)
+      |                                                       [01;31m[K^~[m[K
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:136[m[K:
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:138:25:[m[K [01;31m[Kerror: [m[K‘[01m[KPlanner[m[K’ in namespace ‘[01m[Kadore_global_planner[m[K’ does not name a type
+  138 |   adore_global_planner::[01;31m[KPlanner[m[K,
+      |                         [01;31m[K^~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:139:3:[m[K [01;31m[Kerror: [m[K‘[01m[Knav2_core[m[K’ does not name a type
+  139 |   [01;31m[Knav2_core[m[K::GlobalPlanner)
+      |   [01;31m[K^~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:[m[K In constructor ‘[01m[K{anonymous}::ProxyExec0::ProxyExec0()[m[K’:
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:137:1:[m[K [01;31m[Kerror: [m[K‘[01m[K_derived[m[K’ was not declared in this scope
+  137 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:137:1:[m[K [01;31m[Kerror: [m[K‘[01m[K_base[m[K’ was not declared in this scope
+  137 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:137:1:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KregisterPlugin<<expression error>, <expression error> >(const char [30], const char [25])[m[K’
+  137 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+                 from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:136[m[K:
+[01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived, class Base> void class_loader::impl::registerPlugin(const string&, const string&)[m[K’
+  210 | void [01;36m[KregisterPlugin[m[K(const std::string & class_name, const std::string & base_class_name)
+      |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:136[m[K:
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:137:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  137 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:137:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+gmake[2]: *** [CMakeFiles/adore_global_planner.dir/build.make:76: CMakeFiles/adore_global_planner.dir/src/adore_global_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/adore_global_planner.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

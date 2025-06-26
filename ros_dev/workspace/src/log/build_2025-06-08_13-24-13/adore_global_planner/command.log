@@ -1,0 +1,4 @@
+Invoking command in '/workspace/src/build/adore_global_planner': /usr/bin/cmake --build /workspace/src/build/adore_global_planner -- -j8 -l8
+Invoked command in '/workspace/src/build/adore_global_planner' returned '0': /usr/bin/cmake --build /workspace/src/build/adore_global_planner -- -j8 -l8
+Invoking command in '/workspace/src/build/adore_global_planner': /usr/bin/cmake --install /workspace/src/build/adore_global_planner
+Invoked command in '/workspace/src/build/adore_global_planner' returned '0': /usr/bin/cmake --install /workspace/src/build/adore_global_planner

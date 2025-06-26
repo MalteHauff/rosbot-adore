@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    user: "${UID}:${GID}"        # <— run the container as your host user
+    volumes:
+      - ./workspace:/workspace
+    tty: true
+    stdin_open: true
+    environment:
+      # make sure $UID and $GID get passed in:
+      - UID=${UID}
+      - GID=${GID}

@@ -1,0 +1,28 @@
+[35m[1mConsolidate compiler generated dependencies of target adore_global_planner[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/adore_global_planner.dir/src/adore_global_planner.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libadore_global_planner.so[0m
+[100%] Built target adore_global_planner
+-- Install configuration: ""
+-- Installing: /workspace/src/install/adore_global_planner/share/adore_global_planner/adore_global_planner_plugin.xml
+-- Installing: /workspace/src/install/adore_global_planner/include/
+-- Installing: /workspace/src/install/adore_global_planner/include//adore_global_planner
+-- Installing: /workspace/src/install/adore_global_planner/include//adore_global_planner/adore_global_planner.hpp
+-- Installing: /workspace/src/install/adore_global_planner/lib/libadore_global_planner.so
+-- Set runtime path of "/workspace/src/install/adore_global_planner/lib/libadore_global_planner.so" to ""
+-- Installing: /workspace/src/install/adore_global_planner/share/adore_global_planner_plugin.xml
+-- Installing: /workspace/src/install/adore_global_planner/share/ament_index/resource_index/package_run_dependencies/adore_global_planner
+-- Installing: /workspace/src/install/adore_global_planner/share/ament_index/resource_index/parent_prefix_path/adore_global_planner
+-- Installing: /workspace/src/install/adore_global_planner/share/adore_global_planner/environment/ament_prefix_path.sh
+-- Installing: /workspace/src/install/adore_global_planner/share/adore_global_planner/environment/ament_prefix_path.dsv
+-- Installing: /workspace/src/install/adore_global_planner/share/adore_global_planner/environment/path.sh
+-- Installing: /workspace/src/install/adore_global_planner/share/adore_global_planner/environment/path.dsv
+-- Installing: /workspace/src/install/adore_global_planner/share/adore_global_planner/local_setup.bash
+-- Installing: /workspace/src/install/adore_global_planner/share/adore_global_planner/local_setup.sh
+-- Installing: /workspace/src/install/adore_global_planner/share/adore_global_planner/local_setup.zsh
+-- Installing: /workspace/src/install/adore_global_planner/share/adore_global_planner/local_setup.dsv
+-- Installing: /workspace/src/install/adore_global_planner/share/adore_global_planner/package.dsv
+-- Installing: /workspace/src/install/adore_global_planner/share/ament_index/resource_index/packages/adore_global_planner
+-- Installing: /workspace/src/install/adore_global_planner/share/ament_index/resource_index/nav2_core__pluginlib__plugin/adore_global_planner
+-- Installing: /workspace/src/install/adore_global_planner/share/adore_global_planner/cmake/adore_global_plannerConfig.cmake
+-- Installing: /workspace/src/install/adore_global_planner/share/adore_global_planner/cmake/adore_global_plannerConfig-version.cmake
+-- Installing: /workspace/src/install/adore_global_planner/share/adore_global_planner/package.xml

@@ -1,0 +1,155 @@
+[0.000000] (-) TimerEvent: {}
+[0.000208] (adore_global_planner) JobQueued: {'identifier': 'adore_global_planner', 'dependencies': OrderedDict()}
+[0.000254] (adore_global_planner) JobStarted: {'identifier': 'adore_global_planner'}
+[0.011162] (adore_global_planner) JobProgress: {'identifier': 'adore_global_planner', 'progress': 'cmake'}
+[0.013742] (adore_global_planner) JobProgress: {'identifier': 'adore_global_planner', 'progress': 'build'}
+[0.018637] (adore_global_planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/src/build/adore_global_planner', '--', '-j8', '-l8'], 'cwd': '/workspace/src/build/adore_global_planner', 'env': OrderedDict([('HOSTNAME', '291b27e3d424'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('GID', ''), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('UID', ''), ('DEBIAN_FRONTEND', 'noninteractive'), ('PWD', '/workspace/src/build/adore_global_planner'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'Etc/UTC'), ('COLCON', '1')]), 'shell': False}
+[0.075744] (adore_global_planner) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098698] (-) TimerEvent: {}
+[0.199021] (-) TimerEvent: {}
+[0.241306] (adore_global_planner) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.299223] (adore_global_planner) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.299440] (-) TimerEvent: {}
+[0.304126] (adore_global_planner) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.318038] (adore_global_planner) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.340953] (adore_global_planner) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.361233] (adore_global_planner) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.399590] (-) TimerEvent: {}
+[0.417572] (adore_global_planner) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.419414] (adore_global_planner) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.499728] (-) TimerEvent: {}
+[0.575841] (adore_global_planner) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.599855] (-) TimerEvent: {}
+[0.663211] (adore_global_planner) StdoutLine: {'line': b'-- Found nav2_core: 1.1.18 (/opt/ros/humble/share/nav2_core/cmake)\n'}
+[0.700005] (-) TimerEvent: {}
+[0.800298] (-) TimerEvent: {}
+[0.900627] (-) TimerEvent: {}
+[1.000952] (-) TimerEvent: {}
+[1.069260] (adore_global_planner) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.101068] (-) TimerEvent: {}
+[1.201347] (-) TimerEvent: {}
+[1.295126] (adore_global_planner) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.301423] (-) TimerEvent: {}
+[1.391089] (adore_global_planner) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.401580] (-) TimerEvent: {}
+[1.502124] (-) TimerEvent: {}
+[1.510604] (adore_global_planner) StdoutLine: {'line': b'-- Generating done\n'}
+[1.521770] (adore_global_planner) StdoutLine: {'line': b'-- Build files have been written to: /workspace/src/build/adore_global_planner\n'}
+[1.562667] (adore_global_planner) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target adore_global_planner\x1b[0m\n'}
+[1.602206] (-) TimerEvent: {}
+[1.602556] (adore_global_planner) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/adore_global_planner.dir/src/adore_global_planner.cpp.o\x1b[0m\n'}
+[1.702333] (-) TimerEvent: {}
+[1.802770] (-) TimerEvent: {}
+[1.903209] (-) TimerEvent: {}
+[2.003588] (-) TimerEvent: {}
+[2.103960] (-) TimerEvent: {}
+[2.204325] (-) TimerEvent: {}
+[2.304701] (-) TimerEvent: {}
+[2.405052] (-) TimerEvent: {}
+[2.505409] (-) TimerEvent: {}
+[2.605764] (-) TimerEvent: {}
+[2.706112] (-) TimerEvent: {}
+[2.806409] (-) TimerEvent: {}
+[2.906784] (-) TimerEvent: {}
+[3.007138] (-) TimerEvent: {}
+[3.107470] (-) TimerEvent: {}
+[3.207798] (-) TimerEvent: {}
+[3.308182] (-) TimerEvent: {}
+[3.408518] (-) TimerEvent: {}
+[3.508877] (-) TimerEvent: {}
+[3.609222] (-) TimerEvent: {}
+[3.709575] (-) TimerEvent: {}
+[3.809904] (-) TimerEvent: {}
+[3.910313] (-) TimerEvent: {}
+[4.010662] (-) TimerEvent: {}
+[4.110980] (-) TimerEvent: {}
+[4.211334] (-) TimerEvent: {}
+[4.311687] (-) TimerEvent: {}
+[4.412043] (-) TimerEvent: {}
+[4.512437] (-) TimerEvent: {}
+[4.612810] (-) TimerEvent: {}
+[4.713177] (-) TimerEvent: {}
+[4.813519] (-) TimerEvent: {}
+[4.913853] (-) TimerEvent: {}
+[5.014195] (-) TimerEvent: {}
+[5.114546] (-) TimerEvent: {}
+[5.214898] (-) TimerEvent: {}
+[5.315244] (-) TimerEvent: {}
+[5.415588] (-) TimerEvent: {}
+[5.515892] (-) TimerEvent: {}
+[5.616202] (-) TimerEvent: {}
+[5.716539] (-) TimerEvent: {}
+[5.816881] (-) TimerEvent: {}
+[5.885279] (adore_global_planner) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:1\x1b[m\x1b[K:\n'}
+[5.887023] (adore_global_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/adore_global_planner/include/adore_global_planner/adore_global_planner.hpp:27:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid adore_global_planner::Planner::configure(const SharedPtr&, std::string, const std::shared_ptr<tf2_ros::Buffer>&, std::shared_ptr<nav2_costmap_2d::Costmap2DROS>)\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[5.887172] (adore_global_planner) StderrLine: {'line': b'   27 |   void \x1b[01;31m\x1b[Kconfigure\x1b[m\x1b[K(\n'}
+[5.887290] (adore_global_planner) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[5.901907] (adore_global_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid adore_global_planner::Planner::configure(const SharedPtr&, std::string, const std::shared_ptr<tf2_ros::Buffer>&, std::shared_ptr<nav2_costmap_2d::Costmap2DROS>)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.902134] (adore_global_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:8:15:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kname\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.902257] (adore_global_planner) StderrLine: {'line': b'    8 |   \x1b[01;35m\x1b[Kstd::string name\x1b[m\x1b[K,\n'}
+[5.902371] (adore_global_planner) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[5.917014] (-) TimerEvent: {}
+[6.017345] (-) TimerEvent: {}
+[6.117716] (-) TimerEvent: {}
+[6.218028] (-) TimerEvent: {}
+[6.318421] (-) TimerEvent: {}
+[6.418767] (-) TimerEvent: {}
+[6.519134] (-) TimerEvent: {}
+[6.619524] (-) TimerEvent: {}
+[6.719931] (-) TimerEvent: {}
+[6.820343] (-) TimerEvent: {}
+[6.920739] (-) TimerEvent: {}
+[7.021133] (-) TimerEvent: {}
+[7.121481] (-) TimerEvent: {}
+[7.221829] (-) TimerEvent: {}
+[7.322207] (-) TimerEvent: {}
+[7.422549] (-) TimerEvent: {}
+[7.522905] (-) TimerEvent: {}
+[7.623262] (-) TimerEvent: {}
+[7.723600] (-) TimerEvent: {}
+[7.823951] (-) TimerEvent: {}
+[7.924272] (-) TimerEvent: {}
+[8.024622] (-) TimerEvent: {}
+[8.124965] (-) TimerEvent: {}
+[8.225295] (-) TimerEvent: {}
+[8.325733] (-) TimerEvent: {}
+[8.426075] (-) TimerEvent: {}
+[8.526408] (-) TimerEvent: {}
+[8.626751] (-) TimerEvent: {}
+[8.707162] (adore_global_planner) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:57\x1b[m\x1b[K,\n'}
+[8.707414] (adore_global_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55\x1b[m\x1b[K,\n'}
+[8.707539] (adore_global_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/multi_library_class_loader.hpp:52\x1b[m\x1b[K,\n'}
+[8.707656] (adore_global_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/pluginlib/pluginlib/class_loader.hpp:38\x1b[m\x1b[K,\n'}
+[8.707783] (adore_global_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav2_costmap_2d/nav2_costmap_2d/costmap_2d_ros.hpp:54\x1b[m\x1b[K,\n'}
+[8.707910] (adore_global_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav2_core/global_planner.hpp:21\x1b[m\x1b[K,\n'}
+[8.708023] (adore_global_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspace/src/adore_global_planner/include/adore_global_planner/adore_global_planner.hpp:6\x1b[m\x1b[K,\n'}
+[8.708149] (adore_global_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:1\x1b[m\x1b[K:\n'}
+[8.708263] (adore_global_planner) StderrLine: {'line': b'/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[KB* class_loader::impl::MetaObject<C, B>::create() const [with C = adore_global_planner::Planner; B = nav2_core::GlobalPlanner]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.708383] (adore_global_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:216:7:\x1b[m\x1b[K   required from here\n'}
+[8.708509] (adore_global_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:218:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid new-expression of abstract class type \xe2\x80\x98\x1b[01m\x1b[Kadore_global_planner::Planner\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.708624] (adore_global_planner) StderrLine: {'line': b'  218 |     return \x1b[01;31m\x1b[Knew C\x1b[m\x1b[K;\n'}
+[8.708744] (adore_global_planner) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[8.708856] (adore_global_planner) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:1\x1b[m\x1b[K:\n'}
+[8.708976] (adore_global_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/src/adore_global_planner/include/adore_global_planner/adore_global_planner.hpp:16:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  because the following virtual functions are pure within \xe2\x80\x98\x1b[01m\x1b[Kadore_global_planner::Planner\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.709092] (adore_global_planner) StderrLine: {'line': b'   16 | class \x1b[01;36m\x1b[KPlanner\x1b[m\x1b[K : public nav2_core::GlobalPlanner\n'}
+[8.709204] (adore_global_planner) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.709316] (adore_global_planner) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspace/src/adore_global_planner/include/adore_global_planner/adore_global_planner.hpp:6\x1b[m\x1b[K,\n'}
+[8.709431] (adore_global_planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:1\x1b[m\x1b[K:\n'}
+[8.709543] (adore_global_planner) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/nav2_core/global_planner.hpp:50:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K    \xe2\x80\x98\x1b[01m\x1b[Kvirtual void nav2_core::GlobalPlanner::configure(const WeakPtr&, std::string, std::shared_ptr<tf2_ros::Buffer>, std::shared_ptr<nav2_costmap_2d::Costmap2DROS>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.709660] (adore_global_planner) StderrLine: {'line': b'   50 |   virtual void \x1b[01;36m\x1b[Kconfigure\x1b[m\x1b[K(\n'}
+[8.709773] (adore_global_planner) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.726868] (-) TimerEvent: {}
+[8.827294] (-) TimerEvent: {}
+[8.927646] (-) TimerEvent: {}
+[9.028000] (-) TimerEvent: {}
+[9.128311] (-) TimerEvent: {}
+[9.228647] (-) TimerEvent: {}
+[9.328992] (-) TimerEvent: {}
+[9.429332] (-) TimerEvent: {}
+[9.529680] (-) TimerEvent: {}
+[9.587298] (adore_global_planner) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/adore_global_planner.dir/build.make:76: CMakeFiles/adore_global_planner.dir/src/adore_global_planner.cpp.o] Error 1\n'}
+[9.587598] (adore_global_planner) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/adore_global_planner.dir/all] Error 2\n'}
+[9.587807] (adore_global_planner) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[9.590861] (adore_global_planner) CommandEnded: {'returncode': 2}
+[9.615737] (adore_global_planner) JobEnded: {'identifier': 'adore_global_planner', 'rc': 2}
+[9.626270] (-) EventReactorShutdown: {}

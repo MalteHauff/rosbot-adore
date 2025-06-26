@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>adore_global_planner</name>
+  <version>0.1.0</version>
+  <description>Global planner plugin bridging ROS1 Path into Nav2</description>
+
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>rclcpp_lifecycle</depend>
+  <depend>nav2_core</depend>
+  <depend>nav2_costmap_2d</depend>
+  <depend>pluginlib</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf2_ros</depend>
+
+  <export>
+    <!-- Let Nav2 know where our plugin XML is: -->
+    <nav2_core plugin="${prefix}/adore_global_planner_plugin.xml"/>
+  </export>
+</package>

@@ -1,0 +1,29 @@
+[0.016s] Invoking command in '/workspace/src/build/adore_global_planner': /usr/bin/cmake --build /workspace/src/build/adore_global_planner -- -j8 -l8
+[0.078s] [35m[1mConsolidate compiler generated dependencies of target adore_global_planner[0m
+[0.115s] [100%] Built target adore_global_planner
+[0.128s] Invoked command in '/workspace/src/build/adore_global_planner' returned '0': /usr/bin/cmake --build /workspace/src/build/adore_global_planner -- -j8 -l8
+[0.140s] Invoking command in '/workspace/src/build/adore_global_planner': /usr/bin/cmake --install /workspace/src/build/adore_global_planner
+[0.147s] -- Install configuration: ""
+[0.148s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/adore_global_planner/adore_global_planner_plugin.xml
+[0.148s] -- Up-to-date: /workspace/src/install/adore_global_planner/include/
+[0.148s] -- Up-to-date: /workspace/src/install/adore_global_planner/include//adore_global_planner
+[0.148s] -- Up-to-date: /workspace/src/install/adore_global_planner/include//adore_global_planner/adore_global_planner.hpp
+[0.148s] -- Up-to-date: /workspace/src/install/adore_global_planner/lib/libadore_global_planner.so
+[0.149s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/adore_global_planner_plugin.xml
+[0.149s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/ament_index/resource_index/package_run_dependencies/adore_global_planner
+[0.149s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/ament_index/resource_index/parent_prefix_path/adore_global_planner
+[0.149s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/adore_global_planner/environment/ament_prefix_path.sh
+[0.149s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/adore_global_planner/environment/ament_prefix_path.dsv
+[0.149s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/adore_global_planner/environment/path.sh
+[0.150s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/adore_global_planner/environment/path.dsv
+[0.150s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/adore_global_planner/local_setup.bash
+[0.150s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/adore_global_planner/local_setup.sh
+[0.150s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/adore_global_planner/local_setup.zsh
+[0.150s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/adore_global_planner/local_setup.dsv
+[0.150s] -- Installing: /workspace/src/install/adore_global_planner/share/adore_global_planner/package.dsv
+[0.151s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/ament_index/resource_index/packages/adore_global_planner
+[0.151s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/ament_index/resource_index/nav2_core__pluginlib__plugin/adore_global_planner
+[0.151s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/adore_global_planner/cmake/adore_global_plannerConfig.cmake
+[0.151s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/adore_global_planner/cmake/adore_global_plannerConfig-version.cmake
+[0.151s] -- Up-to-date: /workspace/src/install/adore_global_planner/share/adore_global_planner/package.xml
+[0.152s] Invoked command in '/workspace/src/build/adore_global_planner' returned '0': /usr/bin/cmake --install /workspace/src/build/adore_global_planner

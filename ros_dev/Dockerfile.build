@@ -1,0 +1,37 @@
+# Dockerfile.build
+#
+# Single-stage build: start from ROS2 Humble Desktop so we have bash, colcon, etc.
+
+FROM osrf/ros:humble-desktop
+
+# 1) Install build tools and Nav2/pluginlib dependencies
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+      build-essential \
+      python3-colcon-common-extensions \
+      ros-humble-navigation2 \
+      ros-humble-nav2-core \
+      ros-humble-nav2-costmap-2d \
+      ros-humble-tf2-ros \
+      ros-humble-pluginlib && \
+    rm -rf /var/lib/apt/lists/*
+
+# 2) Source ROS 2 setup in /root/.bashrc (if you rely on it interactively)
+RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
+
+# 3) Copy your plugin workspace and build/install it
+WORKDIR /workspace
+COPY workspace/src ./src
+
+# Build and install into a custom prefix
+RUN bash -lc "\
+    source /opt/ros/humble/setup.bash && \
+    colcon build --install-base /opt/ros/humble_plugin_ws/install"
+
+# At this point, /opt/ros/humble_plugin_ws/install contains:
+#  - lib/libadore_global_planner.so
+#  - share/adore_global_planner/my_global_planner_plugin.xml
+# and all other build artifacts.
+#
+# We leave it in this single-stage image.

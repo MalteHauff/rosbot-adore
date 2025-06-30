@@ -1,5 +1,8 @@
 version: "3.8"
 
+volumes:
+  plugin_ws_install: {}
+
 services:
   dev:
     build:
@@ -8,9 +11,21 @@ services:
     user: "${UID}:${GID}"        # <— run the container as your host user
     volumes:
       - ./workspace:/workspace
+
     tty: true
     stdin_open: true
     environment:
       # make sure $UID and $GID get passed in:
       - UID=${UID}
       - GID=${GID}
+  plugin_builder:
+    build:
+      context: .
+      dockerfile: Dockerfile.build
+    volumes:
+      - plugin_ws_install:/opt/ros/humble_plugin_ws/install:rw
+
+    # Clear out the image's ENTRYPOINT
+    entrypoint: [""]
+    command: ["bash", "-lc", "exit 0"]
+

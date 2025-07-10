@@ -1,0 +1,27 @@
+# Dockerfile.nav2
+
+# 1) Pull in your plugin-builder image (replace tag if needed)
+ARG PLUGIN_BUILDER_IMAGE=adore_global_planner:builder
+FROM ${PLUGIN_BUILDER_IMAGE} AS plugin
+
+# 2) Base Nav2 image
+ARG NAV2_BASE_IMAGE=husarion/navigation2:humble-1.1.12-20240123
+FROM ${NAV2_BASE_IMAGE} AS nav2
+
+USER root
+
+# Install CLI pluginlib support
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+      ros-humble-ros2cli-pluginlib && \
+    rm -rf /var/lib/apt/lists/*
+
+# Copy your plugin into the base prefix
+COPY --from=plugin /opt/ros/humble_plugin_ws/lib/libadore_global_planner.so \
+     /opt/ros/humble/lib/
+COPY --from=plugin /opt/ros/humble_plugin_ws/share/adore_global_planner \
+     /opt/ros/humble/share/adore_global_planner
+
+USER ros
+
+# Default entrypoint remains the same as the base image

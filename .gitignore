@@ -1,1 +1,4 @@
 .vscode
+/rosbot-xl-autonomy
+**/build/
+

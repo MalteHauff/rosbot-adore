@@ -1,6 +1,6 @@
 <library path="adore_global_planner">
   <class 
-    name="adore_global_planner/Planner"
+    name="Planner"
     type="adore_global_planner::Planner"
     base_class_type="nav2_core::GlobalPlanner">
     <description>plugin for adore global planner</description>

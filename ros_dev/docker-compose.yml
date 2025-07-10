@@ -1,7 +1,8 @@
 version: "3.8"
 
 volumes:
-  plugin_ws_install: {}
+  plugin_ws_install:
+    name: plugin_ws_install 
 
 services:
   dev:
@@ -22,10 +23,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.build
+      network: host
+      target: builder
     volumes:
-      - plugin_ws_install:/opt/ros/humble_plugin_ws/install:rw
+      - plugin_ws_install:/opt/ros/humble_plugin_ws:rw
 
     # Clear out the image's ENTRYPOINT
     entrypoint: [""]
-    command: ["bash", "-lc", "exit 0"]
+    command: ["bash", "-lc", "source /opt/ros/humble/setup.bash && colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release"]
 

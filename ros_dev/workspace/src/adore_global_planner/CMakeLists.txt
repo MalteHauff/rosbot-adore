@@ -50,7 +50,7 @@ install(TARGETS ${PROJECT_NAME}
 )
 
 install(FILES adore_global_planner_plugin.xml
-  DESTINATION share/${PRfOJECT_NAME}
+  DESTINATION share/${PROJECT_NAME}
 )
 
 # Testing

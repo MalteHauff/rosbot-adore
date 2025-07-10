@@ -1,2 +1,0 @@
-Invoking command in '/workspace/src/build/adore_global_planner': /usr/bin/cmake /workspace/src/adore_global_planner -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/workspace/src/install/adore_global_planner
-Invoked command in '/workspace/src/build/adore_global_planner' returned '1': /usr/bin/cmake /workspace/src/adore_global_planner -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/workspace/src/install/adore_global_planner

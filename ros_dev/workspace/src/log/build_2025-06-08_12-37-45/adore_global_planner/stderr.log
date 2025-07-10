@@ -1,9 +1,0 @@
-[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:1:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
-    1 | #pragma [01;35m[Konce[m[K
-      |         [01;35m[K^~~~[m[K
-[01m[K/workspace/src/adore_global_planner/src/adore_global_planner.cpp:15:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid adore_global_planner::Planner::configure(const SharedPtr&, std::string, const std::shared_ptr<tf2_ros::Buffer>&, std::shared_ptr<nav2_costmap_2d::Costmap2DROS>)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
-   15 |   void [01;31m[Kconfigure[m[K(
-      |        [01;31m[K^~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/adore_global_planner.dir/build.make:76: CMakeFiles/adore_global_planner.dir/src/adore_global_planner.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/adore_global_planner.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

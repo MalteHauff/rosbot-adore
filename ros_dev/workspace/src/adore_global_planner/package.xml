@@ -1,40 +1,22 @@
-<?xml version="1.0"?>
 <package format="2">
   <name>adore_global_planner</name>
   <version>0.1.0</version>
-  <description>Global planner plugin bridging ROS1 Path into Nav2</description>
-
+  <description>Bridges ROS1 Path into Nav2 as a global planner</description>
   <maintainer email="you@example.com">Your Name</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <build_depend>rclcpp</build_depend>
-  <exec_depend>rclcpp</exec_depend>
-
-  <build_depend>rclcpp_lifecycle</build_depend>
-  <exec_depend>rclcpp_lifecycle</exec_depend>
-
-  <build_depend>nav2_core</build_depend>
-  <exec_depend>nav2_core</exec_depend>
-
-  <build_depend>nav2_costmap_2d</build_depend>
-  <exec_depend>nav2_costmap_2d</exec_depend>
-
-  <build_depend>pluginlib</build_depend>
-  <exec_depend>pluginlib</exec_depend>
-
-  <build_depend>geometry_msgs</build_depend>
-  <exec_depend>geometry_msgs</exec_depend>
-
-  <build_depend>nav_msgs</build_depend>
-  <exec_depend>nav_msgs</exec_depend>
-
-  <build_depend>tf2_ros</build_depend>
-  <exec_depend>tf2_ros</exec_depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_lifecycle</depend>
+  <depend>nav2_core</depend>
+  <depend>nav2_costmap_2d</depend>
+  <depend>pluginlib</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf2_ros</depend>
 
   <export>
-    <build_type>ament_cmake</build_type>
     <nav2_core plugin="${prefix}/adore_global_planner_plugin.xml"/>
   </export>
 </package>

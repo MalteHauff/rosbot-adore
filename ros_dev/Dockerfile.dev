@@ -23,11 +23,9 @@ RUN apt-get update && \
       ros-humble-pluginlib \
     && rm -rf /var/lib/apt/lists/*
 
-# 3) Source ROS 2 in every new shell
+
 RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
 
-# 4) Set working directory to /workspace (this is a volume from the host)
 WORKDIR /workspace
 
-# 5) Keep a shell open by default
 ENTRYPOINT ["/bin/bash"]

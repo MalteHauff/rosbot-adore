@@ -9,26 +9,22 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.dev
-    user: "${UID}:${GID}"        # <— run the container as your host user
+    user: "${UID}:${GID}"        
     volumes:
       - ./workspace:/workspace
 
     tty: true
     stdin_open: true
     environment:
-      # make sure $UID and $GID get passed in:
       - UID=${UID}
       - GID=${GID}
   plugin_builder:
     build:
       context: .
       dockerfile: Dockerfile.build
-      network: host
       target: builder
+      network: host
     volumes:
       - plugin_ws_install:/opt/ros/humble_plugin_ws:rw
-
-    # Clear out the image's ENTRYPOINT
-    entrypoint: [""]
-    command: ["bash", "-lc", "source /opt/ros/humble/setup.bash && colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release"]
-
+      
+    entrypoint: ["/bin/bash", "-lc", "exit 0"]

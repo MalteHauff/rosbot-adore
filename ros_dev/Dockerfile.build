@@ -15,11 +15,9 @@ RUN apt-get update && apt-get install -y \
     python3-ament-package \
  && rm -rf /var/lib/apt/lists/*
 
-# 1) Copy *your entire* workspace (not just src/) so colcon sees package.xml, CMakeLists, etc.
 WORKDIR /workspace
+# Copy entire repo (plugin code) into /workspace
 COPY . /workspace
-
-# Dockerfile.build (relevant snippet)
 SHELL ["/bin/bash", "-lc"]
 
 # Source ROS 2, then build with merged install layout
@@ -27,7 +25,3 @@ RUN source /opt/ros/humble/setup.bash && \
     colcon build \
       --merge-install \
       --install-base /opt/ros/humble_plugin_ws
-
-# Final image: only package the install base
-FROM scratch AS installer
-COPY --from=builder /opt/ros/humble_plugin_ws /opt/ros/humble_plugin_ws

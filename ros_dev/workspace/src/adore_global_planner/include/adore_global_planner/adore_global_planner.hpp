@@ -19,14 +19,7 @@ public:
   Planner() = default;
   ~Planner() override = default;
 
-  /**
-   * NOTE: This signature must match nav2_core::GlobalPlanner exactly:
-   *    configure(
-   *      const WeakPtr&, std::string,
-   *      std::shared_ptr<tf2_ros::Buffer>,
-   *      std::shared_ptr<nav2_costmap_2d::Costmap2DROS>
-   *    )
-   */
+  
   void configure(
     const rclcpp_lifecycle::LifecycleNode::WeakPtr & parent,
     std::string name,

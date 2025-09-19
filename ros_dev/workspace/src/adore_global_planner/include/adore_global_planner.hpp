@@ -19,14 +19,7 @@ public:
   Planner() = default;
   ~Planner() override = default;
 
-  /**
-   * NOTE: This signature must match nav2_core::GlobalPlanner exactly:
-   *    configure(
-   *      const WeakPtr&, std::string,
-   *      std::shared_ptr<tf2_ros::Buffer>,
-   *      std::shared_ptr<nav2_costmap_2d::Costmap2DROS>
-   *    )
-   */
+  
   void configure(
     const rclcpp_lifecycle::LifecycleNode::WeakPtr & parent,
     std::string name,
@@ -42,7 +35,7 @@ public:
     const geometry_msgs::msg::PoseStamped & goal) override;
 
 private:
-  // (Optional) If you still want/use the costmap; otherwise you can remove these members.
+  
   std::shared_ptr<nav2_costmap_2d::Costmap2DROS> costmap_ros_;
   nav2_costmap_2d::Costmap2D * costmap_;
 

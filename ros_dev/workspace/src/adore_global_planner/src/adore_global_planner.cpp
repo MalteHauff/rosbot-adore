@@ -10,10 +10,8 @@ void Planner::configure(
   std::shared_ptr<tf2_ros::Buffer> /*tf*/,
   std::shared_ptr<nav2_costmap_2d::Costmap2DROS> costmap_ros)
 {
-  // Store the LifecycleNode weakly (for logging, clock, etc.)
+  
   parent_node_ = parent;
-
-  // (Optional) keep the costmap if you need it:
   costmap_ros_ = costmap_ros;
   if (costmap_ros_) {
     costmap_ = costmap_ros_->getCostmap();
@@ -21,7 +19,7 @@ void Planner::configure(
     costmap_ = nullptr;
   }
 
-  // 1) Subscribe to the external ROS 1 Path (via rosbridge):
+
   if (auto node = parent_node_.lock()) {
     external_path_sub_ = node->create_subscription<nav_msgs::msg::Path>(
       "/external_path_from_ros1",
@@ -29,7 +27,7 @@ void Planner::configure(
       std::bind(&Planner::externalPathCallback, this, std::placeholders::_1));
   }
 
-  // 2) Create a publisher so Nav2 can see the Path on "/plan":
+
   if (auto node = parent_node_.lock()) {
     internal_path_pub_ = node->create_publisher<nav_msgs::msg::Path>(
       "/plan",
@@ -69,7 +67,6 @@ void Planner::deactivate()
   if (auto node = parent_node_.lock()) {
     RCLCPP_INFO(node->get_logger(), "[Planner] deactivated");
   }
-  // You could reset external_path_sub_ here if you want to stop callbacks while deactivated.
 }
 
 nav_msgs::msg::Path Planner::createPlan(
@@ -88,7 +85,7 @@ nav_msgs::msg::Path Planner::createPlan(
     return last_external_path_;
   }
 
-  // No external Path yet: return an “empty” Path so Nav2 doesn’t crash.
+  
   nav_msgs::msg::Path empty_msg;
   if (auto node = parent_node_.lock()) {
     empty_msg.header.stamp = node->get_clock()->now();
